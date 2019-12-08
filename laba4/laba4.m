@@ -64,16 +64,16 @@ end
 disp('Задание 4. Вывести числовой массив:');
 disp(massiv);
 %5
-%f = fopen('in10.txt','wt');
-%fprintf(f,'Тимофеев Сергей 570 100 203\n');
-%fprintf(f,'1 2 3 4 100\n');
-%fprintf(f,'6 7 8 9 0.1 0.2 0.3 0.4 200\n');
-%fprintf(f,'0.5 0.6 0.7 0.8 57');
-%fclose(f);
+f = fopen('in10.txt','wt');
+fprintf(f,'Тимофеев Сергей 570 100 203\n');
+fprintf(f,'1 2 3 4 100\n');
+fprintf(f,'6 7 8 9 0.1 0.2 0.3 0.4 200\n');
+fprintf(f,'0.5 0.6 0.7 0.8 57');
+fclose(f);
 %6
-%f = fopen('in10.txt','wt+');
-%a = fscanf(f,'%s',2);
-%fclose(f);
+f = fopen('in10.txt','wt+');
+a = fscanf(f,'%s',2);
+fclose(f);
 %7
 File1NameExp='v01';
 PictHigh1='200';
@@ -109,7 +109,7 @@ fprintf(FileHtml,['<br><br> Графики \n']);
 fprintf(FileHtml,['<a href="' FileName000 '">']);
 fprintf(FileHtml,['<br><img src="'...
     FileName000 '" height="' PictHigh1 '" >' '\n']);
-%fprintf(FileHtml,['<a href="' FileName000 '">']);
+fprintf(FileHtml,['<a href="' FileName000 '">']);
 fprintf(FileHtml,['</a>\n']);
 fprintf(FileHtml,['</body>\n']);
 fprintf(FileHtml,['</HTML>\n']);
